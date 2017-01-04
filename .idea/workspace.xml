@@ -31,8 +31,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/081996b2-a4c7-4407-a2b8-6c1338abd77e/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -300,7 +310,7 @@
       <workItem from="1480818164443" duration="13000" />
       <workItem from="1483000514108" duration="527000" />
       <workItem from="1483427187620" duration="960000" />
-      <workItem from="1483430779514" duration="79000" />
+      <workItem from="1483430779514" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="hhh">
       <created>1480409929797</created>
@@ -313,7 +323,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52738000" />
+    <option name="totallyTimeSpent" value="53022000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -558,12 +568,19 @@
     <entry file="file://$PROJECT_DIR$/application/config/config.php" />
     <entry file="file://$PROJECT_DIR$/application/config/routes.php" />
     <entry file="file://$PROJECT_DIR$/application/controllers/Index.php" />
-    <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/application/views/error/error_404.php" />
     <entry file="file://$PROJECT_DIR$/application/views/login/cover.php" />
     <entry file="file://$PROJECT_DIR$/application/views/other/index.php" />
     <entry file="file://$PROJECT_DIR$/license.txt" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/081996b2-a4c7-4407-a2b8-6c1338abd77e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
