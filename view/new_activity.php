@@ -112,7 +112,7 @@ session_write_close();
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group"><label class="col-sm-4 control-label">选择时间</label>
                                     <div class="col-sm-6">
-                                        <i class="fa fa-calendar"></i><span>选择时间范围</span>  <input class="form-control" type="text" name="daterange" value="12/04/2016 - 12/04/2016" />
+                                        <i class="fa fa-calendar"></i><span>选择时间范围</span>  <input class="form-control" type="text" name="daterange" />
                                     </div>
                                 </div>
                                 <div class="form-group"><label class="col-sm-4 control-label">限制参与</label>

@@ -93,4 +93,7 @@ class Activity
     }
 
 
+    public function searchActivity($keyword){
+        return $this->db->query("select * from activity where name like %$keyword%");
+    }
 }

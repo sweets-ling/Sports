@@ -38,13 +38,13 @@ else {
     <div class="sidebar-block">
 
         <div class="text-center">
-            <a href="javascript:void(0);">
-                <img alt="image" class="img-circle" style="width: 40.7%" src="<?php echo $imgurl?>" />
-            </a>                   <br/>
+
+               <a href="settings.php"><img alt="image" class="img-circle" style="width: 40.7%" src="<?php echo $imgurl?>" /></a>
+            <br/>
 
 
 
-            <a href="javascript:void(0);" class="username">  <h4><strong><?PHP echo $nickname ?></strong></h4></a>
+          <h4><strong><?PHP echo $nickname ?></strong></h4>
 
             <p><i class="fa fa-map-marker"></i> <?php echo $location?></p>
 
@@ -53,7 +53,7 @@ else {
                爱好 <?php echo $account->getHobby()?>
             </h3>
             <p>
-                <?php echo $description?>
+             <?php echo $description?>
             </p>
             <div class="row m-t-lg">
                 <div class="col-md-4">

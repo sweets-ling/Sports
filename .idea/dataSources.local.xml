@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Sqlite (Xerial) - sports.db [2]" uuid="0e8a65ee-cd64-42e0-91c6-d983f28b094b">
-      <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <secret-storage>master_key</secret-storage>
-      <auth-required>false</auth-required>
-    </data-source>
-    <data-source name="Sqlite (Xerial) - sportTest.db" uuid="4d11fb6a-c859-4b79-a1ff-a2a26e5efe21">
-      <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <secret-storage>master_key</secret-storage>
-      <auth-required>false</auth-required>
-    </data-source>
-    <data-source name="Sqlite (Xerial) - test.db" uuid="1d1e4f22-052d-421a-8f8e-e2b346492cfc">
-      <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <secret-storage>master_key</secret-storage>
-      <auth-required>false</auth-required>
-    </data-source>
-    <data-source name="Sqlite (Xerial) - sports.db" uuid="081996b2-a4c7-4407-a2b8-6c1338abd77e">
+    <data-source name="Sqlite (Xerial) - mydatabase.sqlite" uuid="d5c4e9f0-b6e1-47d2-9f9c-1acdb79ebdbb">
       <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>

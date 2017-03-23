@@ -24,7 +24,7 @@ else {
 
 <div class="row border-bottom">
     <div class="navbar-header">
-        <form role="search" class="navbar-form-custom" action="search_results.html">
+        <form role="search" class="navbar-form-custom" action="search_results.php">
             <div class="form-group">
                 <input type="text" placeholder="搜索活动与用户..." class="form-control" name="top-search" id="top-search">
             </div>
@@ -56,6 +56,8 @@ else {
         </li>
         <li id="friendnavbar" class="dropdown">
             <a aria-expanded="false" role="button" href="myfriend.php">圈子 </a>
+
+
 
 
         </li>
@@ -110,7 +112,7 @@ else {
 
         <li>
             <a href="../controller/Login/logout.php">
-                <i class="fa fa-sign-out"></i>
+                <i class="fa fa-sign-out">登出</i>
             </a>
         </li>
 

@@ -1,4 +1,4 @@
-g
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@ g
                 if(!isset($_SESSION['userid'])){
                     ?>
 
-                <a class="navbar-brand" href="view/login.php">个人中心</a>
+                <a class="navbar-brand" href="view/login.php">登录／注册</a>
                <?php  }else{
                     ?>
                 <a class="navbar-brand" href="view/homepage.php">个人中心</a>

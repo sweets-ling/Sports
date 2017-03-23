@@ -80,10 +80,10 @@ else {
 </blockquote>
 
 
-                <div class="chat-activity-list">
+                <div class="chat-activity-list"  >
 
 
-
+                    <div class="chat-activity-list" style="overflow: auto;height:300px">
 
                     <?PHP $count=1;
                     foreach ($detail as $x) {
@@ -125,6 +125,12 @@ else {
 
                     <?php   }?>
                     <?php }?>
+                        <div ><a id="msg_end" name="1" href="#1">&nbsp</a></div>
+
+                    </div>
+
+
+
                     <div class="chat-form">
                         <form role="form" action="../controller/Message/addMessage.php?sender=<?php echo $id?>&receiver=<?php echo $toname?>" method="post">
                             <div class="form-group">
@@ -217,6 +223,9 @@ else {
 
 </html>
 <script>
+    $('#msg_end')[0].click();
+</script>
+<script>
     function jump_to(toname) {
         location.href = 'message.php?toname='+toname;
     }
@@ -237,3 +246,5 @@ else {
         });
     }
 </script>
+
+

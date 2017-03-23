@@ -94,4 +94,9 @@ class User
     }
 
 
+    public function searchUser($keyword){
+        return $this->db->query("select * from userinfo where name like %$keyword%");
+    }
+
+
 }

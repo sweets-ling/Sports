@@ -170,10 +170,11 @@ else {
 
 <script>
 
-    function sendMsg(str){
+    function sendMsg(toname){
 
-        var myWindow=window.open('./message.php?toname='+str,'','width=400,height=400');
-        myWindow.focus();
+    //    var myWindow=window.open('./message.php?toname='+str,'','width=400,height=400');
+     //   myWindow.focus();
+        location.href = 'message.php?toname='+toname;
     }
 
 

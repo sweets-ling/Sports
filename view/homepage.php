@@ -61,7 +61,7 @@ else {
                             <h3>今日推荐</h3>
                             <p class="small"><i class="fa fa-hand-o-up"></i>快去约小伙伴一起运动吧！</p>
 
-                        <ul class="sortable-list connectList agile-list">
+                        <ul class="sortable-list connectList agile-list " style="cursor: default">
                             <li class="warning-element">
                                 有氧操
                                 <div class="agile-detail">
@@ -73,7 +73,7 @@ else {
                             <li class="info-element">
                                 Hit 高强度间歇训练
                                 <div class="agile-detail">
-                                    <a href="#" class="pull-right btn btn-xs btn-primary">New</a>
+<!--                                    <a href="#" class="pull-right btn btn-xs btn-primary">New</a>-->
 
                                     <i class="fa fa-clock-o"></i> 20min
                                 </div>
@@ -138,7 +138,7 @@ else {
                                    
                                 </div>
 
-                                <button class="btn btn-primary btn-block m"><i class="fa fa-arrow-down"></i> Show More</button>
+<!--                                <button class="btn btn-primary btn-block m"><i class="fa fa-arrow-down"></i> Show More</button>-->
 
                             </div>
 
