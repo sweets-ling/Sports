@@ -120,7 +120,7 @@ if (!isset($_SESSION['userid'])) {
                                                                                       src="<?php echo $imgurl ?>">
                                 </a>
                                 <hr/>
-                                <h3><strong><?php echo $nickname ?></strong></h3>
+                                <h3><strong class="nickname"><?php echo $nickname ?></strong></h3>
 
                             </div>
                         </div>
@@ -191,7 +191,8 @@ if (!isset($_SESSION['userid'])) {
 <!-- Custom and plugin javascript -->
 <script src='../_static/js/inspinia.js'></script>
 <script src='../_static/js/plugins/pace/pace.min.js'></script>
-
+<script src='../_static/js/pinyin_dict_notone.js'></script>
+<script src='../_static/js/pinyinUtil.js'></script>
 </body>
 
 <script type="text/javascript">
@@ -290,6 +291,14 @@ if (!isset($_SESSION['userid'])) {
     }
 </script>
 <script>
-    
+    function mySort(a,b) {
+        return pinyinUtil.getPinyin($(a).find(".nickname").text(),'',false,false)>pinyinUtil.getPinyin($(b).find(".nickname").text(),'',false,false)?1:-1;
+    }
+    var arr = $('.col-lg-4').toArray();
+    arr.sort(mySort);
+    $('.row.main').empty();
+    for(var i = 0;i<arr.length;i++){
+        $('.row.main').append($(arr[i]));
+    }
 </script>
 </html>
