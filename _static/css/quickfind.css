@@ -1,0 +1,25 @@
+.findBar {
+    position: fixed;
+    width: 30px;
+    height: 520px;
+    right: 20px;
+    top: 10px
+}
+
+.findBar > div {
+    text-align: center;
+    width: 30px;
+    height: 20px;
+    color: darkgrey;
+}
+
+.findBar > div:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.findBar > div > span {
+
+    font-family: 微软雅黑;
+    font-size: 20px;
+}
