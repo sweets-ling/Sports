@@ -65,32 +65,12 @@ if (!isset($_SESSION['userid'])) {
     </div>
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="findBar">
-            <div><span>A</span></div>
-            <div><span>B</span></div>
-            <div><span>C</span></div>
-            <div><span>D</span></div>
-            <div><span>E</span></div>
-            <div><span>F</span></div>
-            <div><span>G</span></div>
-            <div><span>H</span></div>
-            <div><span>I</span></div>
-            <div><span>J</span></div>
-            <div><span>K</span></div>
-            <div><span>L</span></div>
-            <div><span>M</span></div>
-            <div><span>N</span></div>
-            <div><span>O</span></div>
-            <div><span>P</span></div>
-            <div><span>Q</span></div>
-            <div><span>R</span></div>
-            <div><span>S</span></div>
-            <div><span>T</span></div>
-            <div><span>U</span></div>
-            <div><span>V</span></div>
-            <div><span>W</span></div>
-            <div><span>X</span></div>
-            <div><span>Y</span></div>
-            <div><span>Z</span></div>
+
+            <?php
+            foreach(range('A', 'Z') as $letter) {
+             echo '<div><span><a class="close" href="#'.$letter.'">'.$letter.'</a></span></div>';
+            }
+            ?>
         </div>
         <div class="row main">
 
@@ -296,9 +276,9 @@ if (!isset($_SESSION['userid'])) {
     }
     var arr = $('.col-lg-4').toArray();
     arr.sort(mySort);
-    $('.row.main').empty();
+    $(".row.main").empty();
     for(var i = 0;i<arr.length;i++){
-        $('.row.main').append($(arr[i]));
+        $('.row.main').append($(arr[i]).attr('id',pinyinUtil.getFirstLetter($(arr[i]).find(".nickname").text()[0])));
     }
 </script>
 </html>
