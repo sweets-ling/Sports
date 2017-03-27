@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <?php
 
 @session_start();
@@ -280,5 +279,17 @@ if (!isset($_SESSION['userid'])) {
     for(var i = 0;i<arr.length;i++){
         $('.row.main').append($(arr[i]).attr('id',pinyinUtil.getFirstLetter($(arr[i]).find(".nickname").text()[0])));
     }
+</script>
+<script>
+    $(window).scroll(function () {
+        var bar = $(".findBar");
+        var position = bar.position();
+        var offset = bar.offset();
+        if(position['top']<0){
+            bar.offset({top:offset['top']-position['top'],left:offset['left']});
+        }else if(offset['top']>180){
+            bar.offset({top:(offset['top']-position['top'])<170?170:(offset['top']-position['top']),left:offset['left']});
+        }
+    });
 </script>
 </html>
