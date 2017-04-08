@@ -80,6 +80,13 @@ class Activity
         $today=date('Y-m-d H:m:s');
         return       $this->db->exec("insert into activity_comment (aid,uid,content,time) VALUES ('$aid','$uid','$text','$today')");
     }
+    public function addStar($aid,$uid,$star){
+        if(count($this->db->query("select * from activity_star WHERE aid = '$aid' AND uid = '$uid'")->fetchAll())!=0){
+            $this->db->exec("UPDATE activity_star set star = '$star' WHERE  aid = '$aid' AND uid = '$uid'");
+        }else{
+            $this->db->exec("insert into activity_star (aid,uid,star) VALUES ('$aid','$uid','$star')");
+        }
+    }
 
     public function state($begin,$end){
         $today=date('Y-m-d');
