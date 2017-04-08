@@ -85,11 +85,11 @@ else {
                                             <i class="fa fa-futbol-o text-navy mid-icon"></i>
                                         </div>
                                         <h2>选择竞赛类型</h2>
-                                        <span><a href="activity.php?type=0" style="color: black">单人竞赛 </a></span>
-                                        <span><a href="activity.php?type=1" style="color: black">&nbsp;双人竞赛 </a></span>
-                                        <span><a href="activity.php?type=2" style="color: black">&nbsp;多人竞赛 </a></span>
-                                        <span><a href="activity.php?type=3" style="color: black">&nbsp;团队竞赛 </a></span>
-                                        <span><a href="activity.php?type=4" style="color: black">&nbsp;计时竞赛 </a></span>
+                                        <span><a href="activity.php?type=0" style="color: black">跑步 </a></span>
+                                        <span><a href="activity.php?type=1" style="color: black">&nbsp;篮球 </a></span>
+                                        <span><a href="activity.php?type=2" style="color: black">&nbsp;足球 </a></span>
+                                        <span><a href="activity.php?type=3" style="color: black">&nbsp;羽毛球 </a></span>
+                                        <span><a href="activity.php?type=4" style="color: black">&nbsp;乒乓球 </a></span>
                                     </div>
                                 </div>
 

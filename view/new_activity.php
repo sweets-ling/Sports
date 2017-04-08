@@ -92,11 +92,11 @@ session_write_close();
                                         <div class="col-sm-6">
                                             <select name="type" type="text" class="form-control">
                                                 <option value="-1">-------请选择活动类型-------</option>
-                                                <option value="0">单人活动</option>
-                                                <option value="1">双人活动</option>
-                                                <option value="2">多人活动</option>
-                                                <option value="3">团队活动</option>
-                                                <option value="4">计时活动</option>
+                                                <option value="0">跑步</option>
+                                                <option value="1">篮球</option>
+                                                <option value="2">足球</option>
+                                                <option value="3">羽毛球</option>
+                                                <option value="4">乒乓球</option>
 
                                             </select>     </div>
 
