@@ -34,10 +34,23 @@ class Activity
         }
         $today=date('Y-m-d H:i:s');
           $this->db->exec("insert into dynamic(uid,content,time,detail) VALUES ('$uid','用户: $uid 发布了新活动，快去参与吧','$today','活动名称:$name 活动描述:$description');");
-            return $this->db->exec("insert into activity 
+            $res = $this->db->exec("insert into activity 
           (name,type,description,begintime,endtime,uid,limits,state)
            values ('$name','$type','$description','$begintime','$endtime','$uid','$limit',0)");
 
+        $aid = $this->db->query("select * from activity where uid='$uid' AND name = '$name' AND type = '$type' AND description = '$description'")->fetchAll()[0]['id'];
+        if($this->isHighUser($uid)){
+            $this->db->exec("insert into recommend(aid) VALUES ('$aid')");
+        }
+        return $res;
+    }
+    public function isHighUser($uid){
+        $stars = $this->db->query("SELECT SUM (star) FROM activity_star WHERE uid = '$uid'")->fetchAll()[0][0];
+        if($stars>=50){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public function getMyActivityMember($id){
@@ -47,6 +60,9 @@ class Activity
     public function getActivityDetail($id){
 
         return $this->db->query("select a.*,u.id as userid ,u.name as username from activity a,userinfo u where a.id=$id and a.uid=u.id")->fetchAll()[0];
+    }
+    public function getRecommendActivity(){
+        return $this->db->query("select * from recommend ORDER BY id DESC LIMIT 3")->fetchAll();
     }
     public function getActivityComment($id){
 

@@ -37,6 +37,8 @@ else {
     $friend= new Dynamic($userid,$dbaddr);
     include_once('../model/Sport.php');
     $sport= new Sport($userid,$dbaddr);
+    include_once('../model/Activity.php');
+    $activity = new Activity($dbaddr);
 
         $sportdata=$sport->getSport(date('Y-m-d'));
 
@@ -62,31 +64,19 @@ else {
                             <p class="small"><i class="fa fa-hand-o-up"></i>快去约小伙伴一起运动吧！</p>
 
                         <ul class="sortable-list connectList agile-list " style="cursor: default">
-                            <li class="warning-element">
-                                有氧操
-                                <div class="agile-detail">
-
-                                    <i class="fa fa-clock-o"></i> 30min
-                                </div>
-                            </li>
-
-                            <li class="info-element">
-                                Hit 高强度间歇训练
-                                <div class="agile-detail">
-<!--                                    <a href="#" class="pull-right btn btn-xs btn-primary">New</a>-->
-
-                                    <i class="fa fa-clock-o"></i> 20min
-                                </div>
-                            </li>
-                            <li class="danger-element">
-                                跑步等户外有氧运动
-                                <div class="agile-detail">
-
-                                    <i class="fa fa-clock-o"></i> 1 hour
-                                </div>
-                            </li>
-
-
+                            <?php
+                            foreach($activity->getRecommendActivity() as $item){
+                                $activityDetail = $activity->getActivityDetail($item['aid']);
+                                ?>
+                                <li class="warning-element" onclick="location.href='/view/activity_detail.php?activityid=<?=$activityDetail['id']?>'">
+                                    <?=$activityDetail['name']?>
+                                    <div class="agile-detail">
+                                        <?=$activityDetail['description']?>
+                                    </div>
+                                </li>
+                                <?php
+                            }
+                            ?>
                         </ul>
 
 
