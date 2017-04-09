@@ -44,7 +44,7 @@ if (!isset($_SESSION['userid'])) {
             margin: 5px;
             width: 15px;
             height: 15px;
-            background-color: black;
+            background: url("/_static/img/star1.png") round;
             float: left;
             cursor: pointer;
         }
@@ -297,9 +297,9 @@ if (!isset($_SESSION['userid'])) {
     function compare(num) {
         for (var i = 0; i < $('.star').length; i++) {
             if ($($('.star')[i]).attr('name') <= num) {
-                $($('.star')[i]).css('background-color', 'white');
+                $($('.star')[i]).css('background', 'url("/_static/img/star.png") round');
             } else {
-                $($('.star')[i]).css('background-color', 'black');
+                $($('.star')[i]).css('background', 'url("/_static/img/star1.png") round');
             }
         }
     }
